@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    /*Custom properties*/
+    --blanco: #FFFFFF;
+    --amarillo: #FFC300;
+    --secundario: #00838F;
+    --primario: #0047AB;
+    --gris: #DFE9F3;
+    --brown: #a0522d;
+    --brownLight: #be911d;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 14px;
+    /*1rem = 10px*/
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 4%;
+}
+
+.shadow {
+    -webkit-box-shadow: -1px 0px 10px 4px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: -1px 0px 10px 4px rgba(0, 0, 0, 0.32);
+    box-shadow: -1px 0px 10px 4px rgba(0, 0, 0, 0.32);
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+p>a {
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    display: flex;
+}
+
+ul>div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer {
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.final_page {
+    color: #ff0000;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+/* Estilos CSS para el header */
+header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff0000;
+}
+
+.logo {
+    font-size: 12px;
+    color: white;
+}
+
+
+.container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.container .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.container .content h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container .content p {
+    font-size: 18px;
+}
+
+
+/* Estilos CSS para el formulario de contacto*/
+.formulario {
+    background-color: rgb(110, 108, 108);
+    width: min(60rem, 100%);
+    /*Utilizar el valor mas pequeño*/
+    margin: 0 auto !important;
+    padding: 2rem;
+
+    border-radius: 20px;
+}
+
+.section-formulario {
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section-formulario>h2,
+.section-formulario>p {
+    text-align: center;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    color: var(--amarillo);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo input,
+textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+    background-color: var(--gris);
+    color: rgb(94, 91, 91);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}
+
+.campo textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.enviar {
+
+    display: flex !important;
+    justify-content: center;
+    margin-right: 1.8rem;
+}
+
+.boton-contactar {
+
+    margin-left: 1rem;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid var(--blanco);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton-contactar a {
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.boton-contactar:hover {
+    background-color: var(--amarillo);
+}
+
+.boton-contactar a:hover {
+    color: black;
+}
+
+.boton-contactar a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.boton-contactar:hover {
+    color: black;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.main {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 2rem;
+}
+
+.collapse-btn {
+    background-color: var(--brown);
+    padding: 1.5rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+.collapse-btn:hover {
+    background-color: var(--brownLight);
+}
+
+.collapse-btn:focus {
+    outline: none;
+}
+
+.collapse {
+    display: none;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.collapse ul,
+.collapse ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.collapse ul li,
+.collapse ol li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.collapse p {
+    margin-bottom: 10px;
+}
+
+.info_principal {
+    display: flex;
+}
+
+.text-column {
+    flex: 1;
+}
+
+.image-column {
+    flex: 1;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.table-container {
+    flex: 1;
+}
+
+.paragraphs-container {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
