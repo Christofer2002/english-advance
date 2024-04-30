@@ -1,202 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Sofia Torres" />
-    <meta
-      name="description"
-      content="Sitio web sobre los beneficios de la avena para la salud"
-    />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>Greetings</title>
-  </head>
-  <body>
-    <header>
-      <h2>
-        <a class="final_page" href="/index.html">English Advance</a>
-      </h2>
-      <nav>
-        <ul>
-          <li>
-            <div class="logo">
-              <i class="fas fa-book"></i>
-              <a href="/html/alphabet.html">Alphabet</a>
-            </div>
-          </li>
-          <li>
-            <div class="logo">
-              <i class="fas fa-comments"></i>
-              <a href="/html/common_phrases.html">Common Phrases</a>
-            </div>
-          </li>
-          <li>
-            <div class="logo">
-              <i class="fas fa-handshake"></i>
-              <a class="final_page" href="/html/greetings.html">Greetings</a>
-            </div>
-          </li>
-          <li>
-            <div class="logo">
-              <i class="fas fa-list-ol"></i>
-              <a href="/html/cardinal_ordinal.html">Cardinal and Ordinal</a>
-            </div>
-          </li>
-          <li>
-            <div class="logo">
-              <i class="fas fa-question-circle"></i>
-              <a href="/html/asking_answering.html">Asking and Answering</a>
-            </div>
-          </li>
-          <li>
-            <div class="logo">
-              <i class="fas fa-chalkboard"></i>
-              <a href="/html/classroom_objects.html">Classroom Language</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <h1>Greetings</h1>
-      <section class="main contenedor shadow">
-        <div class="info_principal">
-          <div class="text-column">
-            <p>El desayuno no debe ser aburrido…</p>
-            <p>
-              Para los amantes de un desayuno dulce, estos deliciosos panqueques
-              a base avena son perfectos, con pocos ingredientes saludables que
-              seguramente tienes en casa.
-            </p>
-            <p>
-              Lo mejor de todos es que puedes acompañarlos con frutas frescas,
-              jarabes sin azúcar, mermeladas, chocolate, o simplemente comerlos
-              solos.
-            </p>
-          </div>
-          <div class="image-column">
-            <img src="../img/panqueque.jpg" loading="lazy" width="450" alt="avena_pan" />
-          </div>
-        </div>
-        <p class="center font-bold">
-          Las opciones son infinitas y se adaptan a tu estilo de vida
-        </p>
-        <button
-          class="collapse-btn"
-          onclick="toggleCollapse('ingredientes-collapse')"
-        >
-          Ingredientes
-        </button>
-        <div id="ingredientes-collapse" class="collapse">
-          <ul>
-            <li>- 1 manzana.</li>
-            <li>- 1 huevo entero y una clara de huevo adicional.</li>
-            <li>- 1/3 de taza de avena.</li>
-            <li>- Canela o endulzante al gusto</li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Sofia Torres" />
+  <meta name="description" content="Sitio web sobre los beneficios de la avena para la salud" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Greetings</title>
+</head>
 
-        <button class="collapse-btn" onclick="toggleCollapse('pasos-collapse')">
-          Pasos a seguir
-        </button>
-        <div id="pasos-collapse" class="collapse">
-          <ol>
-            <li>
-              1. Cortar la manzana en cuadritos y llevar al microondas por un
-              minuto.
-            </li>
-            <li>
-              2. Agregar a la licuadora 1 huevo, 1 clara de huevo, 1/3 de taza
-              de avena, y la manzana en cuadritos.
-            </li>
-            <li>
-              3. Opcionalmente, añadir canela, vainilla, o endulzante de
-              preferencia.
-            </li>
-            <li>
-              4. Licuar los ingredientes hasta lograr una mezcla consistente.
-            </li>
-            <li>5. Precalentar la sartén durante un minuto a fuego medio.</li>
-            <li>
-              6. Verter la mezcla en medianos círculos, para lograr la forma de
-              panqueque.
-            </li>
-            <li>
-              7. Después de unos 40 segundos, darle vuelta, y seguir este
-              proceso hasta que estén dorados por ambos lados.
-            </li>
-          </ol>
-        </div>
-        <div class="table">
-          <div class="paragraphs-container">
-            <img src="../img/chocolate.jpg" alt="img_chocolate" loading="lazy" />
-          </div>
-          <div class="table-container">
-            <table>
-              <caption>
-                Opciones para agregar y sus beneficios
-              </caption>
-              <tr>
-                <th>Opciones</th>
-                <th>Beneficios</th>
-              </tr>
-              <tr>
-                <td>Arándanos</td>
-                <td>
-                  Contiene fibra y prebiótico, es antiinflamatorio, mejora la
-                  digestión y previene enfermedades.
-                </td>
-              </tr>
-              <tr>
-                <td>Banano</td>
-                <td>
-                  Contiene hierro y zinc, combate la anemia, mejora la
-                  relajación muscular y favorece la salud de la piel.
-                </td>
-              </tr>
-              <tr>
-                <td>Fresas</td>
-                <td>Ricas en antioxidantes, potasio, vitaminas y calcio.</td>
-              </tr>
-              <tr>
-                <td>Chocolate amargo</td>
-                <td>
-                  Ayuda al sistema circulatorio, la función cerebral, controla
-                  los niveles de azúcar, y mejora el estado de ánimo.
-                </td>
-              </tr>
-              <tr>
-                <td>Mantequilla de maní</td>
-                <td>Alta en fibra, vitamina B3, B5, B6 y E.</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <p>
-          Para quienes no sean amantes de la manzana, pueden sustituir esta
-          fruta por una banana y de igual manera conseguir un sabroso sabor.
-        </p>
-        <p>
-          Esta opción quita el antoja de dulce a primeras horas de la mañana y
-          ofrece valiosos nutrientes durante el día.
-        </p>
-        <p>Además, es baja en calorías y saludable.</p>
-        <p class="center final_page">
-          Recuerda que una dieta adecuada tiene variedad y te permite disfrutar
-          de tus comidas.
-        </p>
-      </section>
-    </main>
-    <div class="footer">
-      <p>© All rights reserved. Kenneth and Christofer, 2024.</p>
+<body>
+  <header style="z-index: 100;">
+    <h1><a style="color: white;" href="/index.html">English Topics</a></h1>
+  </header>
+  <div id="nav-container">
+    <div class="bg"></div>
+    <div class="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
     </div>
-    <script src="../js/collapse.js"></script>
-    <script src="../js/scrollToDiv.js"></script>
-  </body>
+    <div id="nav-content" tabindex="0">
+      <ul>
+        <li><i class="fas fa-book"></i>
+          <a href="/html/alphabet.html">Alphabet</a>
+        </li>
+        <li><i class="fas fa-comments"></i>
+          <a href="/html/common_phrases.html">Common Phrases</a>
+        </li>
+        <li> <i class="fas fa-handshake"></i>
+          <a class="final_page" href="/html/greetings.html">Greetings</a>
+        </li>
+        <li><i class="fas fa-sort-numeric-down"></i>
+          <a href="/html/cardinal_ordinal.html">Cardinal and Ordinal</a>
+        </li>
+        <li><i class="fas fa-question-circle"></i>
+          <a href="/html/asking_answering.html"> Asking and Answering</a>
+        </li>
+        <li><i class="fas fa-chalkboard"></i>
+          <a href="/html/classroom_objects.html">Classroom Language</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <main>
+    <h1 style="padding-top: 2.5rem;">Greetings</h1>
+    <section class="main contenedor shadow">
+      <div class="info_principal">
+        <div class="text-column">
+          <p>El desayuno no debe ser aburrido…</p>
+          <p>
+            Para los amantes de un desayuno dulce, estos deliciosos panqueques
+            a base avena son perfectos, con pocos ingredientes saludables que
+            seguramente tienes en casa.
+          </p>
+          <p>
+            Lo mejor de todos es que puedes acompañarlos con frutas frescas,
+            jarabes sin azúcar, mermeladas, chocolate, o simplemente comerlos
+            solos.
+          </p>
+        </div>
+        <div class="image-column">
+          <img src="../img/panqueque.jpg" loading="lazy" width="450" alt="avena_pan" />
+        </div>
+      </div>
+      <p class="center font-bold">
+        Las opciones son infinitas y se adaptan a tu estilo de vida
+      </p>
+      <button class="collapse-btn" onclick="toggleCollapse('ingredientes-collapse')">
+        Ingredientes
+      </button>
+      <div id="ingredientes-collapse" class="collapse">
+        <ul>
+          <li>- 1 manzana.</li>
+          <li>- 1 huevo entero y una clara de huevo adicional.</li>
+          <li>- 1/3 de taza de avena.</li>
+          <li>- Canela o endulzante al gusto</li>
+        </ul>
+      </div>
+
+      <button class="collapse-btn" onclick="toggleCollapse('pasos-collapse')">
+        Pasos a seguir
+      </button>
+      <div id="pasos-collapse" class="collapse">
+        <ol>
+          <li>
+            1. Cortar la manzana en cuadritos y llevar al microondas por un
+            minuto.
+          </li>
+          <li>
+            2. Agregar a la licuadora 1 huevo, 1 clara de huevo, 1/3 de taza
+            de avena, y la manzana en cuadritos.
+          </li>
+          <li>
+            3. Opcionalmente, añadir canela, vainilla, o endulzante de
+            preferencia.
+          </li>
+          <li>
+            4. Licuar los ingredientes hasta lograr una mezcla consistente.
+          </li>
+          <li>5. Precalentar la sartén durante un minuto a fuego medio.</li>
+          <li>
+            6. Verter la mezcla en medianos círculos, para lograr la forma de
+            panqueque.
+          </li>
+          <li>
+            7. Después de unos 40 segundos, darle vuelta, y seguir este
+            proceso hasta que estén dorados por ambos lados.
+          </li>
+        </ol>
+      </div>
+      <div class="table">
+        <div class="paragraphs-container">
+          <img src="../img/chocolate.jpg" alt="img_chocolate" loading="lazy" />
+        </div>
+        <div class="table-container">
+          <table>
+            <caption>
+              Opciones para agregar y sus beneficios
+            </caption>
+            <tr>
+              <th>Opciones</th>
+              <th>Beneficios</th>
+            </tr>
+            <tr>
+              <td>Arándanos</td>
+              <td>
+                Contiene fibra y prebiótico, es antiinflamatorio, mejora la
+                digestión y previene enfermedades.
+              </td>
+            </tr>
+            <tr>
+              <td>Banano</td>
+              <td>
+                Contiene hierro y zinc, combate la anemia, mejora la
+                relajación muscular y favorece la salud de la piel.
+              </td>
+            </tr>
+            <tr>
+              <td>Fresas</td>
+              <td>Ricas en antioxidantes, potasio, vitaminas y calcio.</td>
+            </tr>
+            <tr>
+              <td>Chocolate amargo</td>
+              <td>
+                Ayuda al sistema circulatorio, la función cerebral, controla
+                los niveles de azúcar, y mejora el estado de ánimo.
+              </td>
+            </tr>
+            <tr>
+              <td>Mantequilla de maní</td>
+              <td>Alta en fibra, vitamina B3, B5, B6 y E.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p>
+        Para quienes no sean amantes de la manzana, pueden sustituir esta
+        fruta por una banana y de igual manera conseguir un sabroso sabor.
+      </p>
+      <p>
+        Esta opción quita el antoja de dulce a primeras horas de la mañana y
+        ofrece valiosos nutrientes durante el día.
+      </p>
+      <p>Además, es baja en calorías y saludable.</p>
+      <p class="center red_text">
+        Recuerda que una dieta adecuada tiene variedad y te permite disfrutar
+        de tus comidas.
+      </p>
+    </section>
+  </main>
+  <div class="footer">
+    <p>© All rights reserved. Kenneth and Christofer, 2024.</p>
+  </div>
+  <script src="../js/collapse.js"></script>
+  <script src="../js/scrollToDiv.js"></script>
+</body>
+
 </html>

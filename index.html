@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Kenneth and Christofer" />
-  <meta name="description" content="Website about the benefits of oats for health" />
+  <meta name="description" content="Website topics of english" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -15,57 +16,44 @@
 </head>
 
 <body>
-  <header>
-    <h2>
-      <a class="final_page" href="./index.html">English Advance</a>
-    </h2>
-    <nav>
+
+  <header style="z-index: 100;"><h1 class="final_page">English Topics</h1></header>
+  <div id="nav-container">
+    <div class="bg"></div>
+    <div class="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" tabindex="0">
       <ul>
-        <li>
-          <div class="logo">
-            <i class="fas fa-book"></i>
-            <a href="./html/alphabet.html">Alphabet</a>
-          </div>
+        <li><i class="fas fa-book"></i>
+          <a href="./html/alphabet.html">Alphabet</a>
         </li>
-        <li>
-          <div class="logo">
-            <i class="fas fa-comments"></i>
-            <a href="./html/common_phrases.html">Common Phrases</a>
-          </div>
+        <li><i class="fas fa-comments"></i>
+          <a href="./html/common_phrases.html">Common Phrases</a>
         </li>
-        <li>
-          <div class="logo">
-            <i class="fas fa-handshake"></i>
-            <a href="./html/greetings.html">Greetings</a>
-          </div>
+        <li> <i class="fas fa-handshake"></i>
+          <a href="./html/greetings.html">Greetings</a>
         </li>
-        <li>
-          <div class="logo">
-            <i class="fas fa-sort-numeric-down"></i>
-            <a href="./html/cardinal_ordinal.html">Cardinal and Ordinal</a>
-          </div>
+        <li><i class="fas fa-sort-numeric-down"></i>
+          <a href="./html/cardinal_ordinal.html">Cardinal and Ordinal</a>
         </li>
-        <li>
-          <div class="logo">
-            <i class="fas fa-question-circle"></i>
-            <a href="./html/asking_answering.html"> Asking and Answering</a>
-          </div>
+        <li><i class="fas fa-question-circle"></i>
+          <a href="./html/asking_answering.html"> Asking and Answering</a>
         </li>
-        <li>
-          <div class="logo">
-            <i class="fas fa-chalkboard"></i>
-            <a href="./html/classroom_objects.html">Classroom Language</a>
-          </div>
+        <li><i class="fas fa-chalkboard"></i>
+          <a href="./html/classroom_objects.html">Classroom Language</a>
         </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
 
   <div class="container">
     <img class="background-image" src="./img/english-hub.png" alt="Imagen de fondo" />
     <div class="overlay"></div>
     <div class="content">
-      <h1>Welcome to English Topics</h1>
+      <h1 >Welcome to English Topics</h1>
       <p>
         Explore a variety of essential English topics to enhance your language
         skills and fluency. Whether you're mastering the alphabet, learning
@@ -85,7 +73,7 @@
     </p>
     <p>Explore:</p>
 
-    <div>
+    <div style="margin-left: 2rem">
       <li>The Alphabet</li>
       <li>Common Phrases</li>
       <li>Greetings</li>
@@ -126,6 +114,8 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
@@ -140,6 +130,12 @@
         <div class="carousel-item">
           <img src="/img/cardinal-ordinal-roman-numerals.png" class="d-block w-100" alt="..." />
         </div>
+        <div class="carousel-item">
+          <img src="/img/asking-for-and-giving-personal-information.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/classroom-objects.jpg" class="d-block w-100" alt="..." />
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -151,7 +147,7 @@
       </button>
     </div>
 
-    <p class="final_page center">
+    <p class="red_text center">
       Remember that a diverse diet of English topics allows you to enjoy the
       richness of the language.
     </p>
